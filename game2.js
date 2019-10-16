@@ -1,27 +1,63 @@
-const Card1 =function(name, description, comic_debut, tv_series, movies, superhuman_powers, arch_enemies, marvelmax,wincounter,losscounter) {
-    this.name = name
-    this.description = description
-    this.comic_debut = comic_debut
-    this.tv_series = tv_series
-    this.movies = movies
-    this.superhuman_powers = superhuman_powers
-    this.arch_enemies = arch_enemies
-    this.marvelmax = marvelmax
-    this.wincounter = wincounter
-    this.losscounter = losscounter
+class Card  {
+    constructor(name, description,wincounter,losscounter){
+    this.name = name;
+    this.description = description;
+    this.wincounter = wincounter;
+    this.losscounter = losscounter;
+    }
 }
-const Cards2 = function(name,description,most_loveable,smartest,fattest,biggest_nerd,greatest_anarchist,walk_of_fame,wincounter,losscounter){
-    this.name = name
-    this.description = description
-    this.most_loveable = most_loveable
-    this.smartest = smartest
-    this.fattest = fattest
-    this.biggest_nerd = biggest_nerd
-    this.greatest_anarchist = greatest_anarchist
-    this.walk_of_fame = walk_of_fame
-    this.wincounter = wincounter
-    this.losscounter = losscounter
+
+class Marcard extends Card {
+    constructor(name, description, comic_debut, tv_series, movies, superhuman_powers, arch_enemies, marvelmax,wincounter,losscounter){
+    super(name,description,wincounter,losscounter);
+    this.comic_debut = comic_debut;
+    this.tv_series = tv_series;
+    this.movies = movies;
+    this.superhuman_powers = superhuman_powers;
+    this.arch_enemies = arch_enemies;
+    this.marvelmax = marvelmax;
+    }
 }
+
+class Simcard extends Card {
+    constructor(name,description,most_loveable,smartest,fattest,biggest_nerd,greatest_anarchist,walk_of_fame,wincounter,losscounter){
+    super(name,description,wincounter,losscounter);
+    this.most_loveable = most_loveable;
+    this.smartest = smartest;
+    this.fattest = fattest;
+    this.biggest_nerd = biggest_nerd;
+    this.greatest_anarchist = greatest_anarchist;
+    this.walk_of_fame = walk_of_fame;
+    }
+
+
+}
+
+
+// const Card1 =function(name, description, comic_debut, tv_series, movies, superhuman_powers, arch_enemies, marvelmax,wincounter,losscounter) {
+//     this.name = name
+//     this.description = description
+//     this.comic_debut = comic_debut
+//     this.tv_series = tv_series
+//     this.movies = movies
+//     this.superhuman_powers = superhuman_powers
+//     this.arch_enemies = arch_enemies
+//     this.marvelmax = marvelmax
+//     this.wincounter = wincounter
+//     this.losscounter = losscounter
+// }
+// const Cards2 = function(name,description,most_loveable,smartest,fattest,biggest_nerd,greatest_anarchist,walk_of_fame,wincounter,losscounter){
+//     this.name = name
+//     this.description = description
+//     this.most_loveable = most_loveable
+//     this.smartest = smartest
+//     this.fattest = fattest
+//     this.biggest_nerd = biggest_nerd
+//     this.greatest_anarchist = greatest_anarchist
+//     this.walk_of_fame = walk_of_fame
+//     this.wincounter = wincounter
+//     this.losscounter = losscounter
+// }
 let playingdeck = [];
 let shuffledeck = [];
 let simpsons = [];
@@ -42,36 +78,36 @@ let carddrawn1;
 let carddrawn2;
 let drawpile = [];
 
-let blade = new Card1("Blade", "Cool vampire hunter", 1973, 2, 3, 38, 2, 4, 0, 0);
-let bullseye = new Card1("Bullseye", "cool assasin", 1976, 0, 1, 30, 1, 2, 0,0);
-let captainamerica = new Card1("Captain America", "Good old Cap", 1941, 8, 0, 45, 7, 4 , 0,0);
-let carnage = new Card1("Carnage", "red Vemon" , 1991, 2, 0, 43, 2, 1, 0,0);
-let cyclops = new Card1("Cyclops", "laser eyes", 1963, 5, 3, 43, 5, 4, 0,0);
-let daredevil = new Card1("Daredevil", "Blind lawyer vigilante", 1964, 1, 1, 36, 3, 4, 0,0);
-let deadpool = new Card1("Deadpool", "You know deadpool", 1991, 0, 0, 45, 1, 1, 0,0);
-let doctordoom = new Card1("Doctor Doom", "science and magic bad guy", 1962, 8, 2, 74, 4, 4, 0,0);
-let electra = new Card1("Electra", "femme-fatal/ ninja", 1980, 0, 2, 41, 1, 3, 0,0);
-let galactus = new Card1("Galactus", "eats planets nuff said",1966,3,1,86,5, 3, 0,0);
-let ghostrider = new Card1("Ghost Rider","flaming skull head on a bike..ring any bells?",1972,1,1,48,1,3,0,0);
-let greengobil = new Card1("Green Goblin", "nutcase who hates spierman",1964,3,2,45,1,4,0,0);
-let humantorch = new Card1("Human Torch","Flame On!!",1961,4,2,45,6,4,0,0);
-let invisiblewoman = new Card1("invisible woman","she can go invisible", 1961,5,2,50,6,4,0,0);
-let ironman = new Card1("Iron Man","rich guy with too much time on his hands",1963,7,0,76,7,3,0,0);
-let kingpin = new Card1("Kingpin","big guy",1967,5,1,36,2,3,0,0);
-let magneto = new Card1("Magneto","controls metal", 1963,5,3,62,5,4,0,0);
-let misterfantastic = new Card1("mister fantastic","stretchy guy",1978,3,3,38,2,2,0,0);
-let mystique = new Card1("Mystique","Blue lady, can change look like anyone",1978,3,3,38,2,2,0,0);
-let namor = new Card1("Namor","no idea",1963,4,3,80,4,4,0,0);
-let phoenix = new Card1("Phoenix","well its Phoenix",1963,4,3,80,4,4,0,0);
-let professorx = new Card1("Professor X","wheelechair + baldguy",1963,4,3,40,4,4,0,0);
-let sandman = new Card1("Sandman","made of sand",1966,3,1,76,1,5,0,0);
-let silversurfer = new Card1("Silver Surfer","silver guy fly on a surf board",1966,3,1,76,1,5,0,0);
-let storm = new Card1("Storm","controls weather",1975,4,3,41,4,4,0,0);
-let spiderman = new Card1("Spiderman","its spiderman!!",1962,9,3,45,10,5,0,0);
-let hulk = new Card1("Hulk","Big Green and angry",1962,5,67,4,5,0,0);
-let thething = new Card1("The Thing","It's clobberin' time!",1961,6,2,52,6,4,0,0);
-let venom = new Card1("Venom","makes tobey maguire dance like a tool",1988,2,1,36,1,3,0,0);
-let wolverine = new Card1("Wolverin","Metal Claws!!!",1974,3,3,48,4,5,0,0);
+let blade = new Marcard("Blade", "Cool vampire hunter", 1973, 2, 3, 38, 2, 4, 0, 0);
+let bullseye = new Marcard("Bullseye", "cool assasin", 1976, 0, 1, 30, 1, 2, 0,0);
+let captainamerica = new Marcard("Captain America", "Good old Cap", 1941, 8, 0, 45, 7, 4 , 0,0);
+let carnage = new Marcard("Carnage", "red Vemon" , 1991, 2, 0, 43, 2, 1, 0,0);
+let cyclops = new Marcard("Cyclops", "laser eyes", 1963, 5, 3, 43, 5, 4, 0,0);
+let daredevil = new Marcard("Daredevil", "Blind lawyer vigilante", 1964, 1, 1, 36, 3, 4, 0,0);
+let deadpool = new Marcard("Deadpool", "You know deadpool", 1991, 0, 0, 45, 1, 1, 0,0);
+let doctordoom = new Marcard("Doctor Doom", "science and magic bad guy", 1962, 8, 2, 74, 4, 4, 0,0);
+let electra = new Marcard("Electra", "femme-fatal/ ninja", 1980, 0, 2, 41, 1, 3, 0,0);
+let galactus = new Marcard("Galactus", "eats planets nuff said",1966,3,1,86,5, 3, 0,0);
+let ghostrider = new Marcard("Ghost Rider","flaming skull head on a bike..ring any bells?",1972,1,1,48,1,3,0,0);
+let greengobil = new Marcard("Green Goblin", "nutcase who hates spierman",1964,3,2,45,1,4,0,0);
+let humantorch = new Marcard("Human Torch","Flame On!!",1961,4,2,45,6,4,0,0);
+let invisiblewoman = new Marcard("invisible woman","she can go invisible", 1961,5,2,50,6,4,0,0);
+let ironman = new Marcard("Iron Man","rich guy with too much time on his hands",1963,7,0,76,7,3,0,0);
+let kingpin = new Marcard("Kingpin","big guy",1967,5,1,36,2,3,0,0);
+let magneto = new Marcard("Magneto","controls metal", 1963,5,3,62,5,4,0,0);
+let misterfantastic = new Marcard("mister fantastic","stretchy guy",1978,3,3,38,2,2,0,0);
+let mystique = new Marcard("Mystique","Blue lady, can change look like anyone",1978,3,3,38,2,2,0,0);
+let namor = new Marcard("Namor","no idea",1963,4,3,80,4,4,0,0);
+let phoenix = new Marcard("Phoenix","well its Phoenix",1963,4,3,80,4,4,0,0);
+let professorx = new Marcard("Professor X","wheelechair + baldguy",1963,4,3,40,4,4,0,0);
+let sandman = new Marcard("Sandman","made of sand",1966,3,1,76,1,5,0,0);
+let silversurfer = new Marcard("Silver Surfer","silver guy fly on a surf board",1966,3,1,76,1,5,0,0);
+let storm = new Marcard("Storm","controls weather",1975,4,3,41,4,4,0,0);
+let spiderman = new Marcard("Spiderman","its spiderman!!",1962,9,3,45,10,5,0,0);
+let hulk = new Marcard("Hulk","Big Green and angry",1962,5,67,4,5,0,0);
+let thething = new Marcard("The Thing","It's clobberin' time!",1961,6,2,52,6,4,0,0);
+let venom = new Marcard("Venom","makes tobey maguire dance like a tool",1988,2,1,36,1,3,0,0);
+let wolverine = new Marcard("Wolverin","Metal Claws!!!",1974,3,3,48,4,5,0,0);
 marvelmax = [
     blade,
     bullseye,
@@ -104,36 +140,36 @@ marvelmax = [
     venom,
     wolverine,
 ]
-let grandpa = new Cards2("Abraham 'grandpa' Simpson","",68,56,66,76,78,86,0,0);
-let apu = new Cards2("Apu Nahasapeemapetilon","",78,96,78,52,88,68,0,0);
-let barny = new Cards2("Barney Gumble","",86,50,96,86,74,80,0,0);
-let bart = new Cards2("Bart Simpson","",90,78,50,44,98,96,0,0);
-let burns = new Cards2("C. Montgomery Burns","",48,92,40,78,90,84,0,0);
-let wigum = new Cards2("Chief Wigum","",76,40,98,82,46,72,0,0);
-let hibbert = new Cards2("Dr Julius Hibbert","",58,66,88,64,64,46,0,0);
-let edna = new Cards2("Edna Krabappel","",48,64,56,62,60,44,0,0);
-let willie = new Cards2("Groundskeeper Willie","",62,48,70,66,80,64,0,0);
-let homer = new Cards2("Homer Simpson","",92,76,94,48,94,98,0,0);
-let itch = new Cards2("Itchy & Scratchy","",72,52,60,56,84,76,0,0);
-let krusty = new Cards2("Krusty the clown","",70,86,92,54,86,78,0,0);
-let lenny = new Cards2("Lenny & Karl","",82,60,54,94,56,54,0,0);
-let lisa = new Cards2("Lisa Simpson","",98,98,48,42,96,94,0,0);
-let maggie = new Cards2("Maggie Simpson","",100,54,46,74,60,92,0,0);
-let marge = new Cards2("Marge Simpson","",94,94,68,46,62,90,0,0);
-let martin = new Cards2("Martin","",80,80,90,70,72,52,0,0);
-let millhouse = new Cards2("Milhouse Van Houten","",78,84,74,88,68,62,0,0);
-let moe = new Cards2("Moe Szyslak","",76,72,44,72,82,82,0,0);
-let ned = new Cards2("Ned Flanders","",52,88,84,98,42,74,0,0);
-let nelson = new Cards2("Nelson Muntz","",32,20,67,89,56,39,0,0);
-let otto = new Cards2("Otto","",66,58,62,84,76,60,0,0);
-let patty = new Cards2("Patty & Selma Bouvier","",50,90,86,50,92,88,0,0);
-let skinner = new Cards2("Principal Skinner","",74,64,80,48,70,75,0,0);
-let dog = new Cards2("Santas little helper","",96,44,42,60,50,66,0,0);
-let twins = new Cards2("Sherri & Terri","",54,82,58,76,66,58,0,0);
-let bob = new Cards2("Sideshow bob","",82,62,76,90,54,40,0,0);
-let cat = new Cards2("Snowball II","",88,42,52,58,52,56,0,0);
-let boys = new Cards2("Todd & Rod Flanders","",60,68,80,96,44,48,0,0);
-let smithers = new Cards2("Waylon Smithers","",56,40,82,92,58,42,0,0);
+let grandpa = new Simcard("Abraham 'grandpa' Simpson","",68,56,66,76,78,86,0,0);
+let apu = new Simcard("Apu Nahasapeemapetilon","",78,96,78,52,88,68,0,0);
+let barny = new Simcard("Barney Gumble","",86,50,96,86,74,80,0,0);
+let bart = new Simcard("Bart Simpson","",90,78,50,44,98,96,0,0);
+let burns = new Simcard("C. Montgomery Burns","",48,92,40,78,90,84,0,0);
+let wigum = new Simcard("Chief Wigum","",76,40,98,82,46,72,0,0);
+let hibbert = new Simcard("Dr Julius Hibbert","",58,66,88,64,64,46,0,0);
+let edna = new Simcard("Edna Krabappel","",48,64,56,62,60,44,0,0);
+let willie = new Simcard("Groundskeeper Willie","",62,48,70,66,80,64,0,0);
+let homer = new Simcard("Homer Simpson","",92,76,94,48,94,98,0,0);
+let itch = new Simcard("Itchy & Scratchy","",72,52,60,56,84,76,0,0);
+let krusty = new Simcard("Krusty the clown","",70,86,92,54,86,78,0,0);
+let lenny = new Simcard("Lenny & Karl","",82,60,54,94,56,54,0,0);
+let lisa = new Simcard("Lisa Simpson","",98,98,48,42,96,94,0,0);
+let maggie = new Simcard("Maggie Simpson","",100,54,46,74,60,92,0,0);
+let marge = new Simcard("Marge Simpson","",94,94,68,46,62,90,0,0);
+let martin = new Simcard("Martin","",80,80,90,70,72,52,0,0);
+let millhouse = new Simcard("Milhouse Van Houten","",78,84,74,88,68,62,0,0);
+let moe = new Simcard("Moe Szyslak","",76,72,44,72,82,82,0,0);
+let ned = new Simcard("Ned Flanders","",52,88,84,98,42,74,0,0);
+let nelson = new Simcard("Nelson Muntz","",32,20,67,89,56,39,0,0);
+let otto = new Simcard("Otto","",66,58,62,84,76,60,0,0);
+let patty = new Simcard("Patty & Selma Bouvier","",50,90,86,50,92,88,0,0);
+let skinner = new Simcard("Principal Skinner","",74,64,80,48,70,75,0,0);
+let dog = new Simcard("Santas little helper","",96,44,42,60,50,66,0,0);
+let twins = new Simcard("Sherri & Terri","",54,82,58,76,66,58,0,0);
+let bob = new Simcard("Sideshow bob","",82,62,76,90,54,40,0,0);
+let cat = new Simcard("Snowball II","",88,42,52,58,52,56,0,0);
+let boys = new Simcard("Todd & Rod Flanders","",60,68,80,96,44,48,0,0);
+let smithers = new Simcard("Waylon Smithers","",56,40,82,92,58,42,0,0);
 simpsons = [
     grandpa,
     apu,
@@ -324,7 +360,7 @@ let game = function(){
             carddrawn1.wincounter++
             carddrawn2.losscounter++
             deck1.push(carddrawn2)
-            drawwin()
+            draw(deck1)
         }
         else if (action1 == action2){
             drawpile.push(carddrawn1)
@@ -337,22 +373,29 @@ let game = function(){
             carddrawn2.wincounter++
             carddrawn1.losscounter++
             deck2.push(carddrawn1)
-            drawlose()
+            draw(deck2)
         }
         and()
         
     
     }
-    let drawwin = function(){
+
+
+    let draw = function(deck){
         for(let i = 0; i <drawpile.length;i++){
-            deck1.push(i)
+            deck.push(i)
         }
     }
-    let drawlose = function(){
-        for(let i = 0;i <drawpile.length;i++){
-            deck2.push(i)
-        }
-    }
+    // let drawwin = function(){
+    //     for(let i = 0; i <drawpile.length;i++){
+    //         deck1.push(i)
+    //     }
+    // }
+    // let drawlose = function(){
+    //     for(let i = 0;i <drawpile.length;i++){
+    //         deck2.push(i)
+    //     }
+    // }
     let and = function(){
         if(deck1.length > 0 && drawtype == "mardraw1"){
             mardraw()
