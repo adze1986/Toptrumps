@@ -1,0 +1,9 @@
+.main {
+    text-align: center;
+
+    background-color: blanchedalmond;
+}
+
+.cards img:hover {
+    transform: scale(1.5)
+}

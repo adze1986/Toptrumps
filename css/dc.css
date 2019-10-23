@@ -1,0 +1,56 @@
+body {
+    background-image: url("/toptrumps/mainimg/dc.jpeg");
+    background-size: cover;
+    position: absolute;
+
+}
+#shuffle {
+    position: relative;
+    animation-name: fly;
+    animation-duration: 2s;
+    opacity: 0;
+    z-index: 3;
+
+}
+@keyframes fly {
+    0%{
+        transform: translate(-80%);
+        opacity: 1;
+        
+    }
+    100%{
+        transform: translate(190%);
+        opacity: 1;
+    }
+}
+#deck1 {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    z-index: 2;
+}
+#deck2 {
+    position: absolute;
+    top: 50px;
+    left: 1250px;
+    z-index: 2;
+}
+#description {
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+    height: 300px;
+    width: 1000px;
+    top: 80px;
+    left: 300px;
+
+}
+#draw {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 600px;
+    left: 1400px;
+    z-index: 2;
+    background-color: red;
+}
