@@ -16,7 +16,7 @@ body {
     0%{
         transform: translate(-80%);
         opacity: 1;
-        
+         
     }
     100%{
         transform: translate(190%);
@@ -41,9 +41,8 @@ body {
     background-color: antiquewhite;
     height: 300px;
     width: 1000px;
-    top: 80px;
+    top: 200px;
     left: 300px;
-
 }
 #draw {
     position: absolute;
@@ -53,4 +52,101 @@ body {
     left: 1400px;
     z-index: 2;
     background-color: red;
+}
+#showncard1 {
+    position: absolute;
+    top: 100px;
+    left: 490px;
+    transform: scale(1.5);
+}
+#showncard2 {
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    transform: scale(1.5);
+}
+#deckcount1 {
+    position: absolute;
+    font-size: 90px;
+    color:greenyellow;
+    top: 140px;
+    left: 150px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+#deckcount2 {
+    position: absolute;
+    font-size: 90px;
+    color:greenyellow;
+    top: 140px;
+    left: 1310px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+#height {
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    top: 303px;
+    left: 450px;
+    opacity: 0;
+    z-index: 3;
+}
+#inteli {
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    top: 318px;
+    left: 450px;
+    opacity: 0;
+}
+#strength {
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    top: 333px;
+    left: 450px;
+    opacity: 0;
+}
+#speed {
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    top: 348px;
+    left: 450px;
+    opacity: 0;
+}
+#agility {
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    top: 363px;
+    left: 450px;
+    opacity: 0;
+}
+#fight { 
+    position: absolute;
+    height: 5px;
+    width: 150px;
+    top: 379px;
+    left: 450px;
+    opacity: 0;
+}
+#carddescription {
+    position: absolute;
+    background-color: grey;
+    text-align: center;
+    height: 230px;
+    width: 960px;
+    left: 320px;
+    top: 580px;
 }

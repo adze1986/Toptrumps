@@ -1,6 +1,7 @@
 body {
     background-image: url("/toptrumps/mainimg/marvelback.jpg");
     background-size: cover;
+    position: absolute;
 }
 
 #shuffle {
@@ -24,15 +25,15 @@ body {
     }
 }
 #deck1 {
-    position: relative;
-    top: -400px;
+    position: absolute;
+    top: 50px;
     left: 90px;
     z-index: 2;
 }
 #deck2 {
-    position: relative;
-    top: -400px;
-    left: 1050px;
+    position: absolute;
+    top: 50px;
+    left: 1250px;
     z-index: 2;
 }
 #description {
@@ -41,20 +42,116 @@ body {
     background-color: antiquewhite;
     height: 300px;
     width: 1000px;
-}
-#description {
-    top: -380px;
+    top: 100px;
     left: 300px;
 }
-#p {
-    background-color: black
-}
 #draw {
-    position: relative;
+    position: absolute;
     height: 50px;
     width: 100px;
-    top: 150px;
+    top: 600px;
     left: 1400px;
     z-index: 2;
     background-color: red;
+}
+#showncard1 {
+    position: absolute;
+    top: 100px;
+    left: 490px;
+    transform: scale(1.5);
+}
+#showncard2 {
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    transform: scale(1.5);
+}
+#deckcount1 {
+    position: absolute;
+    font-size: 90px;
+    color:greenyellow;
+    top: 140px;
+    left: 150px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+#deckcount2 {
+    position: absolute;
+    font-size: 90px;
+    color:greenyellow;
+    top: 140px;
+    left: 1310px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+#comic {
+    position: absolute;
+    height: 22px;
+    width: 175px;
+    top: 378px;
+    left: 455px;
+    opacity: 0;
+    z-index: 3;
+}
+#tv {
+    position: absolute;
+    height: 22px;
+    width: 175px;
+    top: 401px;
+    left: 455px;
+    opacity: 0;
+    z-index: 3;
+}
+#movies {
+    position: absolute;
+    height: 22px;
+    width: 175px;
+    top: 424px;
+    left: 455px;
+    opacity: 0;
+    z-index: 3;
+}
+#super {
+    position: absolute;
+    height: 22px;
+    width: 175px;
+    top: 447px;
+    left: 455px;
+    opacity: 0;
+    z-index: 3;
+}
+#arch {
+    position: absolute;
+    height: 22px;
+    width: 175px;
+    top: 470px;
+    left: 455px;
+    opacity: 0;
+    z-index: 3;
+}
+#Marvel { 
+    position: absolute;
+    height: 22px;
+    width: 175px;
+    top: 493px;
+    left: 455px;
+    opacity: 0;
+    z-index: 3;
+}
+#carddescription {
+    position: absolute;
+    background-color: grey;
+    text-align: center;
+    height: 230px;
+    width: 960px;
+    left: 320px;
+    top: 620px;
 }

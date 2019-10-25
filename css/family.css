@@ -1,43 +1,46 @@
 body {
     background-image: url("/toptrumps/mainimg/familyback.jpg");
     background-size: cover;
+    position: absolute;
 }
-
 #shuffle {
     position: relative;
     animation-name: swing;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    left: -490px;
+    top: 300px;
     height: 400px;
     opacity: 0;
     z-index: 3;
 
-}
+} 
 @keyframes swing {
     0%{
-        transform: translateY(100%);
+        transform: translate(0%)scale(2);
         opacity: 1;
         
     }
     50%{
-        transform: translateY(0%);
+        transform: translate(120%)scale(2);
         opacity: 1;
-        
+
     }
     100%{
-        transform: translateY(300%);
+        transform: translate(-60%)scale(2);
         opacity: 1;
     }
+
 }
 #deck1 {
-    position: relative;
-    top: -400px;
+    position: absolute;
+    top: 50px;
     left: 90px;
     z-index: 2;
 }
 #deck2 {
-    position: relative;
-    top: -400px;
-    left: 1050px;
+    position: absolute;
+    top: 50px;
+    left: 1250px;
     z-index: 2;
 }
 #description {
@@ -46,20 +49,103 @@ body {
     background-color: antiquewhite;
     height: 300px;
     width: 1000px;
-}
-#description {
-    top: -380px;
+    top: 100px;
     left: 300px;
 }
-#p {
-    background-color: black
-}
 #draw {
-    position: relative;
+    position: absolute;
     height: 50px;
     width: 100px;
-    top: 150px;
+    top: 600px;
     left: 1400px;
     z-index: 2;
     background-color: red;
+}
+#showncard1 {
+    position: absolute;
+    top: 100px;
+    left: 490px;
+    transform: scale(1.5);
+}
+#showncard2 {
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    transform: scale(1.5);
+}
+#deckcount1 {
+    position: absolute;
+    font-size: 90px;
+    color:greenyellow;
+    top: 140px;
+    left: 150px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+#deckcount2 {
+    position: absolute;
+    font-size: 90px;
+    color:greenyellow;
+    top: 140px;
+    left: 1310px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+#style {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    top: 346px;
+    left: 600px;
+    opacity: 0;
+    z-index: 3;
+}
+#Quahog {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    top: 382px;
+    left: 600px;
+    opacity: 0;
+}
+#tact {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    top: 417px;
+    left: 600px;
+    opacity: 0;
+}
+#delusions {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    top: 453px;
+    left: 600px;
+    opacity: 0;
+}
+#family {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    top: 489px;
+    left: 600px;
+    opacity: 0;
+}
+#carddescription {
+    position: absolute;
+    background-color: grey;
+    text-align: center;
+    height: 230px;
+    width: 960px;
+    left: 320px;
+    top: 580px;
 }
