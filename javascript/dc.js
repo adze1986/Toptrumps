@@ -97,6 +97,7 @@ let dcdraw = function(){
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic();
+    display2()
     document.getElementById("height").style.opacity = 1;
     document.getElementById("inteli").style.opacity = 1;
     document.getElementById("strength").style.opacity = 1;
@@ -110,37 +111,55 @@ heightbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.height,
     action2 = carddrawn2.height
     compare()
+    display()
 })
 intelbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.intelligence
     action2 = carddrawn2.intelligence
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 strengthbutton.addEventListener("click",()=>{
     action1 = carddrawn1.strength
     action2 = carddrawn2.strength
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 speedbutton.addEventListener("click",()=>{
     action1 = carddrawn1.speed
     action2 = carddrawn2.speed
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 agilitybutton.addEventListener("click",()=>{
     action1 = carddrawn1.agility
     action2 = carddrawn2.agility
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 fightbutton.addEventListener("click",()=>{
     action1 = carddrawn1.fighting_skills
     action2 = carddrawn2.fighting_skills
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
+const display2 = ()=>{
+    document.getElementById("height").style.display = "block";
+    document.getElementById("inteli").style.display = "block";
+    document.getElementById("strength").style.display = "block";
+    document.getElementById("speed").style.display = "block";
+    document.getElementById("agility").style.display = "block";
+    document.getElementById("fight").style.display = "block";
+}
+const display = ()=>{
+    document.getElementById("draw").style.display = "block"
+    document.getElementById("height").style.display = "none";
+    document.getElementById("inteli").style.display = "none";
+    document.getElementById("strength").style.display = "none";
+    document.getElementById("speed").style.display = "none";
+    document.getElementById("agility").style.display = "none";
+    document.getElementById("fight").style.display = "none";
+}
 const coverpic = () => {
     if (carddrawn1.pic == 1){
         document.getElementById("showncard1").src = "/toptrumps/decks/dc/ares.jpg"

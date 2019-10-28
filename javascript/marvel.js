@@ -97,6 +97,7 @@ let mardraw = function(){
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
+    display2()
     document.getElementById("comic").style.opacity = 1
     document.getElementById("tv").style.opacity = 1
     document.getElementById("movies").style.opacity = 1
@@ -110,38 +111,55 @@ comicbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.comic_debut
     action2 = carddrawn2.comic_debut
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 tvbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.tv_series
     action2 = carddrawn2.tv_series
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 moviesbutton.addEventListener("click",()=>{
     action1 = carddrawn1.movies
     action2 = carddrawn2.movies
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 superbutton.addEventListener("click",()=>{
     action1 = carddrawn1.superhuman_powers
     action2 = carddrawn2.superhuman_powers
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 archbutton.addEventListener("click",()=>{
     action1 = carddrawn1.arch_enemies
     action2 = carddrawn2.arch_enemies
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 Marvelbutton.addEventListener("click",()=>{
     action1 = carddrawn1.marvelmax
     action2 = carddrawn2.marvelmax
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
+const display2 = ()=>{
+    document.getElementById("comic").style.display = "block"
+    document.getElementById("tv").style.display = "block"
+    document.getElementById("movies").style.display = "block"
+    document.getElementById("super").style.display = "block"
+    document.getElementById("arch").style.display = "block"
+    document.getElementById("Marvel").style.display = "block"
+}
+const display = ()=>{
+    document.getElementById("draw").style.display = "block"
+    document.getElementById("comic").style.display = "none"
+    document.getElementById("tv").style.display = "none"
+    document.getElementById("movies").style.display = "none"
+    document.getElementById("super").style.display = "none"
+    document.getElementById("arch").style.display = "none"
+    document.getElementById("Marvel").style.display = "none"
+}
 const coverpic = () => {
     if (carddrawn1.pic == 1){
         document.getElementById("showncard1").src = "/toptrumps/decks/marvel/blade.jpg"

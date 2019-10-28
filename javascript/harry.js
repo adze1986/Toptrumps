@@ -95,6 +95,7 @@ let harrydraw = function(){
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
+    display2()
     document.getElementById("magic").style.opacity = 1
     document.getElementById("cunning").style.opacity = 1
     document.getElementById("courage").style.opacity = 1
@@ -107,32 +108,47 @@ magicbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.magic
     action2 = carddrawn2.magic
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 cunningbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.cunning
     action2 = carddrawn2.cunning
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 couragebutton.addEventListener("click",()=>{
     action1 = carddrawn1.courage
     action2 = carddrawn2.courage
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 wisdombutton.addEventListener("click",()=>{
     action1 = carddrawn1.wisdom
     action2 = carddrawn2.wisdom
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 temperbutton.addEventListener("click",()=>{
     action1 = carddrawn1.temper
     action2 = carddrawn2.temper
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
+const display2 = ()=>{
+    document.getElementById("magic").style.display = "block"
+    document.getElementById("cunning").style.display = "block"
+    document.getElementById("courage").style.display = "block"
+    document.getElementById("wisdom").style.display = "block"
+    document.getElementById("temper").style.display = "block"
+}
+const display = ()=>{
+    document.getElementById("draw").style.display = "block"
+    document.getElementById("magic").style.display = "none"
+    document.getElementById("cunning").style.display = "none"
+    document.getElementById("courage").style.display = "none"
+    document.getElementById("wisdom").style.display = "none"
+    document.getElementById("temper").style.display = "none"
+}
 const coverpic = () => {
     if (carddrawn1.pic == 1){
         document.getElementById("showncard1").src = "/toptrumps/decks/harry/alb.jpg"

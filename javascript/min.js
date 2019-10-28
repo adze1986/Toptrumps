@@ -95,6 +95,7 @@ let mindraw = function(){
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
+    display2()
     document.getElementById("cleverness").style.opacity = 1
     document.getElementById("bravery").style.opacity = 1
     document.getElementById("leadership").style.opacity = 1
@@ -107,32 +108,47 @@ clevernessbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.cleverness,
     action2 = carddrawn2.cleverness
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 braverybutton.addEventListener("click", ()=>{
     action1 = carddrawn1.bravery
     action2 = carddrawn2.bravery
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 leadershipbutton.addEventListener("click",()=>{
     action1 = carddrawn1.leadership
     action2 = carddrawn2.leadership
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 mischievousbutton.addEventListener("click",()=>{
     action1 = carddrawn1.mischievous
     action2 = carddrawn2.mischievous
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 toptrumpsratingbutton.addEventListener("click",()=>{
     action1 = carddrawn1.top_trumps_rating
     action2 = carddrawn2.top_trumps_rating
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
+const display2 = ()=>{
+    document.getElementById("cleverness").style.display = "block"
+    document.getElementById("bravery").style.display = "block"
+    document.getElementById("leadership").style.display = "block"
+    document.getElementById("mischievous").style.display = "block"
+    document.getElementById("toptrumps").style.display = "block"
+}
+const display = ()=>{
+    document.getElementById("draw").style.display = "block"
+    document.getElementById("cleverness").style.display = "none"
+    document.getElementById("bravery").style.display = "none"
+    document.getElementById("leadership").style.display = "none"
+    document.getElementById("mischievous").style.display = "none"
+    document.getElementById("toptrumps").style.display = "none"
+}
 const coverpic = () => {
     if (carddrawn1.pic == 1){
         document.getElementById("showncard1").src = "/toptrumps/decks/min/aye.jpg"

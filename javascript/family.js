@@ -89,10 +89,13 @@ let familydraw = function(){
     }
     carddrawn1 = []
     carddrawn2 = []
+    document.getElementById("deckcount1").innerHTML = deck1.length
+    document.getElementById("deckcount2").innerHTML = deck2.length
     document.getElementById("showncard2").src = "/toptrumps/mainimg/family.jpg"
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
+    display2()
     document.getElementById("style").style.opacity = 1
     document.getElementById("Quahog").style.opacity = 1
     document.getElementById("tact").style.opacity = 1
@@ -105,32 +108,47 @@ stylebutton.addEventListener("click", ()=>{
     action1 = carddrawn1.style
     action2 = carddrawn2.style
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 Quahogbutton.addEventListener("click", ()=>{
-    action1 = carddrawn1.quahog_fame
-    action2 = carddrawn2.quahog_fame
-    compare()
-    document.getElementById("draw").style.display = "block"
+    action1 = carddrawn1.quahog_fame;
+    action2 = carddrawn2.quahog_fame;
+    compare();
+    display();
 })
 tactbutton.addEventListener("click",()=>{
     action1 = carddrawn1.tact
     action2 = carddrawn2.tact
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 delusionsbutton.addEventListener("click",()=>{
     action1 = carddrawn1.delusions
     action2 = carddrawn2.delusions
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 familybutton.addEventListener("click",()=>{
     action1 = carddrawn1.family_values
     action2 = carddrawn2.family_values
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
+const display2 = ()=>{
+    document.getElementById("style").style.display = "block"
+    document.getElementById("Quahog").style.display = "block"
+    document.getElementById("tact").style.display = "block"
+    document.getElementById("delusions").style.display = "block"
+    document.getElementById("family").style.display = "block"
+}
+const display = ()=>{
+    document.getElementById("draw").style.display = "block"
+    document.getElementById("style").style.display = "none"
+    document.getElementById("Quahog").style.display = "none"
+    document.getElementById("tact").style.display = "none"
+    document.getElementById("delusions").style.display = "none"
+    document.getElementById("family").style.display = "none"
+}
 const coverpic = () => {
     if (carddrawn1.pic == 1){
         document.getElementById("showncard1").src = "/toptrumps/decks/family/ber.jpg"

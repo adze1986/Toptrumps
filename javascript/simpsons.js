@@ -103,6 +103,7 @@ let simdraw = function(){
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
+    display2()
     document.getElementById("mostlove").style.opacity = 1
     document.getElementById("smartest").style.opacity = 1
     document.getElementById("fattest").style.opacity = 1
@@ -116,38 +117,55 @@ mostlovebutton.addEventListener("click", ()=>{
     action1 = carddrawn1.most_loveable,
     action2 = carddrawn2.most_loveable
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 smartestbutton.addEventListener("click", ()=>{
     action1 = carddrawn1.smartest
     action2 = carddrawn2.smartest
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 fattestbutton.addEventListener("click",()=>{
     action1 = carddrawn1.fattest
     action2 = carddrawn2.fattest
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 biggestbutton.addEventListener("click",()=>{
     action1 = carddrawn1.biggest_nerd
     action2 = carddrawn2.biggest_nerd
     compare() 
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 greatestbutton.addEventListener("click",()=>{
     action1 = carddrawn1.greatest_anarchist
     action2 = carddrawn2.greatest_anarchist
     compare()
-    document.getElementById("draw").style.display = "block"
+    display()
 })
 walkbutton.addEventListener("click",()=>{
     action1 = carddrawn1.walk_of_fame;
     action2 = carddrawn2.walk_of_fame;
     compare();
-    document.getElementById("draw").style.display = "block"
+    display()
 })
+const display2 = ()=>{
+    document.getElementById("mostlove").style.display = "block"
+    document.getElementById("smartest").style.display = "block"
+    document.getElementById("fattest").style.display = "block"
+    document.getElementById("biggest").style.display = "block"
+    document.getElementById("Greatest").style.display = "block"
+    document.getElementById("walk").style.display = "block"
+}
+const display = ()=>{
+    document.getElementById("draw").style.display = "block"
+    document.getElementById("mostlove").style.display = "none"
+    document.getElementById("smartest").style.display = "none"
+    document.getElementById("fattest").style.display = "none"
+    document.getElementById("biggest").style.display = "none"
+    document.getElementById("Greatest").style.display = "none"
+    document.getElementById("walk").style.display = "none"
+}
 const coverpic = () => {
     if (carddrawn1.pic == 1){
         document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/abraham.jpg"

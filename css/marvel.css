@@ -8,20 +8,25 @@ body {
     position: relative;
     animation-name: swing;
     animation-duration: 3s;
+    transform: scale(0.5);
+    left: 400px;
+    top: -600px;
     opacity: 0;
     z-index: 3;
-
 }
 @keyframes swing {
     0%{
-        transform: scale(0.1)rotateZ();
+        transform: scale(0.5)translateY(0px);
         opacity: 1;
         
     }
-    100%{
-        transform: scale(10)rotateZ(100deg);
+    50%{
+        transform: scale(0.5)translateY(710px);
         opacity: 1;
-        
+    }
+    100%{
+        transform: scale(0.5)translateY(-600px);
+        opacity: 1;
     }
 }
 #deck1 {
@@ -37,12 +42,12 @@ body {
     z-index: 2;
 }
 #description {
-    position: relative;
+    position: absolute;
     text-align: center;
     background-color: antiquewhite;
     height: 300px;
     width: 1000px;
-    top: 100px;
+    top: 570px;
     left: 300px;
 }
 #draw {
