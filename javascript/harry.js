@@ -85,13 +85,13 @@ deck1 = playingdeck.splice(0,15)
 deck2 = playingdeck.splice(0,15)
 let harrydraw = function(){
     if(deck2.length == 0 ){
-        {alert("You win the other player has no more cards")};
+        document.getElementById("win").style.display = "block";
     }
     carddrawn1 = []
     carddrawn2 = []
     document.getElementById("deckcount1").innerHTML = deck1.length
     document.getElementById("deckcount2").innerHTML = deck2.length
-    document.getElementById("showncard2").src = "/toptrumps/mainimg/harry.jpg"
+    document.getElementById("showncard2").src = "../mainimg/harry.jpg"
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
@@ -151,186 +151,186 @@ const display = ()=>{
 }
 const coverpic = () => {
     if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/alb.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/alb.jpg"
     }
     if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/bell.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/bell.jpg"
     }
     if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/bla.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/bla.jpg"
     }
     if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/cor.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/cor.jpg"
     }
     if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/dea.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/dea.jpg"
     }
     if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/dra.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/dra.jpg"
     }
     if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/fen.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/fen.jpg"
     }
     if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/gin.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/gin.jpg"
     }
     if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/gre.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/gre.jpg"
     }
     if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/har.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/har.jpg"
     }
     if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/her.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/her.jpg"
     }
     if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/hor.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/hor.jpg"
     }
     if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/kat.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/kat.jpg"
     }
     if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/lav.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/lav.jpg"
     }
     if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/lun.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/lun.jpg"
     }
     if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/min.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/min.jpg"
     }
     if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/mol.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/mol.jpg"
     }
     if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/mrs.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/mrs.jpg"
     }
     if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/nar.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/nar.jpg"
     }
     if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/nev.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/nev.jpg"
     }
     if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/nym.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/nym.jpg"
     }
     if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/pan.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/pan.jpg"
     }
     if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/rem.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/rem.jpg"
     }
     if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/rom.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/rom.jpg"
     }
     if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/ron.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/ron.jpg"
     }
     if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/rub.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/rub.jpg"
     }
     if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/sea.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/sea.jpg"
     }
     if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/sev.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/sev.jpg"
     }
     if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/tom.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/tom.jpg"
     }
     if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "/toptrumps/decks/harry/vin.jpg"
+        document.getElementById("showncard1").src = "../decks/harry/vin.jpg"
     }
 }
 const secondcoverpic = () => {
     if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/alb.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/alb.jpg"
     }
     if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/bell.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/bell.jpg"
     }
     if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/bla.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/bla.jpg"
     }
     if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/cor.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/cor.jpg"
     }
     if (carddrawn2.pic == 5){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/dea.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/dea.jpg"
     }
     if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/dra.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/dra.jpg"
     }
     if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/fen.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/fen.jpg"
     }
     if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/gin.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/gin.jpg"
     }
     if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/gre.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/gre.jpg"
     }
     if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/har.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/har.jpg"
     }
     if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/her.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/her.jpg"
     }
     if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/hor.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/hor.jpg"
     }
     if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/kat.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/kat.jpg"
     }
     if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/lav.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/lav.jpg"
     }
     if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/lun.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/lun.jpg"
     }
     if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/min.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/min.jpg"
     }
     if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/mol.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/mol.jpg"
     }
     if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/mrs.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/mrs.jpg"
     }
     if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/nar.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/nar.jpg"
     }
     if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/nev.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/nev.jpg"
     }
     if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/nym.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/nym.jpg"
     }
     if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/pan.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/pan.jpg"
     }
     if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/rem.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/rem.jpg"
     }
     if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/rom.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/rom.jpg"
     }
     if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/ron.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/ron.jpg"
     }
     if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/rub.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/rub.jpg"
     }
     if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/sea.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/sea.jpg"
     }
     if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/sev.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/sev.jpg"
     }
     if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/tom.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/tom.jpg"
     }
     if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "/toptrumps/decks/harry/vin.jpg"
+        document.getElementById("showncard2").src = "../decks/harry/vin.jpg"
     }
 }
 let compare = function(){
@@ -360,7 +360,7 @@ let draw = function(deck){
     }
 }
 home.addEventListener("click", ()=>{
-    window.location.replace("/toptrumps/htmls/index.html");
+    window.location.replace("../htmls/index.html");
 })
 drawbutton.addEventListener("click", ()=>{
     harrydraw()

@@ -1,7 +1,15 @@
 body {
-    background-image: url("/toptrumps/mainimg/simpsonsback.png");
+    background-image: url("../mainimg/simpsonsback.png");
     background-size: cover;
     position: absolute;
+}
+#win {
+    position: absolute;
+    z-index: 4;
+    transform: scale(1.7);
+    left: 300px;
+    top: 200px;
+    display: none;
 }
 #shuffle { 
     position: relative;
@@ -11,7 +19,7 @@ body {
     top: 300px;
     height: 400px;
     opacity: 0;
-    z-index: 3;
+    z-index: 5;
 
 } 
 @keyframes swing {

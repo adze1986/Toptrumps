@@ -93,13 +93,13 @@ deck2 = playingdeck.splice(0,15)
 
 let simdraw = function(){
     if(deck2.length == 0 ){
-        {alert("You win the other player has no more cards")};
+        document.getElementById("win").style.display = "block";
     }
     carddrawn1 = []
     carddrawn2 = []
     document.getElementById("deckcount1").innerHTML = deck1.length
     document.getElementById("deckcount2").innerHTML = deck2.length
-    document.getElementById("showncard2").src = "/toptrumps/mainimg/simpsonsback.jpg"
+    document.getElementById("showncard2").src = "../mainimg/simpsonsback.jpg"
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
@@ -168,186 +168,186 @@ const display = ()=>{
 }
 const coverpic = () => {
     if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/abraham.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/abraham.jpg"
     }
     if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/apu.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/apu.jpg"
     }
     if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/barney.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/barney.jpg"
     }
     if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/bart.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/bart.jpg"
     }
     if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/burns.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/burns.jpg"
     }
     if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/chief.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/chief.jpg"
     }
     if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/dr.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/dr.jpg"
     }
     if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/edna.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/edna.jpg"
     }
     if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/willie.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/willie.jpg"
     }
     if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/homer.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/homer.jpg"
     }
     if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/itchy.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/itchy.jpg"
     }
     if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/clown.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/clown.jpg"
     }
     if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/lenny.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/lenny.jpg"
     }
     if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/lisa.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/lisa.jpg"
     }
     if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/maggie.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/maggie.jpg"
     }
     if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/marge.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/marge.jpg"
     }
     if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/martin.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/martin.jpg"
     }
     if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/van.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/van.jpg"
     }
     if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/moe.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/moe.jpg"
     }
     if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/ned.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/ned.jpg"
     }
     if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/nelson.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/nelson.jpg"
     }
     if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/otto.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/otto.jpg"
     }
     if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/patty.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/patty.jpg"
     }
     if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/skinner.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/skinner.jpg"
     }
     if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/little.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/little.jpg"
     }
     if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/terri.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/terri.jpg"
     }
     if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/bob.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/bob.jpg"
     }
     if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/cat.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/cat.jpg"
     }
     if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/todd.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/todd.jpg"
     }
     if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "/toptrumps/decks/simpsons/smithers.jpg"
+        document.getElementById("showncard1").src = "../decks/simpsons/smithers.jpg"
     }
 }
 const secondcoverpic = () => {
     if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/abraham.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/abraham.jpg"
     }
     if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/apu.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/apu.jpg"
     }
     if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/barney.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/barney.jpg"
     }
     if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/bart.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/bart.jpg"
     }
     if (carddrawn2.pic == 5){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/burns.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/burns.jpg"
     }
     if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/chief.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/chief.jpg"
     }
     if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/dr.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/dr.jpg"
     }
     if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/edna.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/edna.jpg"
     }
     if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/willie.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/willie.jpg"
     }
     if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/homer.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/homer.jpg"
     }
     if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/itchy.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/itchy.jpg"
     }
     if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/clown.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/clown.jpg"
     }
     if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/lenny.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/lenny.jpg"
     }
     if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/lisa.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/lisa.jpg"
     }
     if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/maggie.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/maggie.jpg"
     }
     if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/marge.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/marge.jpg"
     }
     if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/martin.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/martin.jpg"
     }
     if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/van.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/van.jpg"
     }
     if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/moe.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/moe.jpg"
     }
     if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/ned.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/ned.jpg"
     }
     if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/nelson.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/nelson.jpg"
     }
     if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/otto.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/otto.jpg"
     }
     if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/patty.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/patty.jpg"
     }
     if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/skinner.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/skinner.jpg"
     }
     if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/little.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/little.jpg"
     }
     if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/terri.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/terri.jpg"
     }
     if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/bob.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/bob.jpg"
     }
     if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/cat.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/cat.jpg"
     }
     if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/todd.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/todd.jpg"
     }
     if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "/toptrumps/decks/simpsons/smithers.jpg"
+        document.getElementById("showncard2").src = "../decks/simpsons/smithers.jpg"
     }
 }
 let compare = function(){
@@ -368,6 +368,7 @@ let compare = function(){
         draw(deck2)
         console.log(drawpile)
 
+
     }
     else if (action1 == action2){
         drawpile.push(carddrawn1)
@@ -378,11 +379,11 @@ let compare = function(){
 }
 let draw = function(deck){
     for(let i = 0; i <drawpile.length;i++){
-        deck.push(drawpile[i])
+        deck.splice(drawpile)
     }
 }
 home.addEventListener("click", ()=>{
-    window.location.replace("/toptrumps/htmls/index.html");
+    window.location.replace("../htmls/index.html");
 })
 drawbutton.addEventListener("click", ()=>{
     simdraw()

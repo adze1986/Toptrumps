@@ -1,16 +1,24 @@
 body {
-    background-image: url("/toptrumps/mainimg/minback.jpg");
+    background-image: url("../mainimg/minback.jpg");
     background-size: cover;
     position: absolute;
 }
+#win {
+    position: absolute;
+    z-index: 5;
+    transform: scale(1.7);
+    left: 300px;
+    top: 200px;
+    display: none;
+}
+
 #shuffle {
     position: absolute;
     animation-name: fly;
     top:200px;
     animation-duration: 2s;
     opacity: 0;
-    z-index: 3;
-
+    z-index: 4;
 }
 @keyframes fly {
     0%{
@@ -99,7 +107,7 @@ body {
     top: 361px;
     left: 483px;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
 }
 #bravery {
     position: absolute;
@@ -108,7 +116,7 @@ body {
     top: 393px;
     left: 483px;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
 }
 #leadership {
     position: absolute;
@@ -117,7 +125,7 @@ body {
     top: 426px;
     left: 483px;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
 }
 #mischievous {
     position: absolute;
@@ -126,7 +134,7 @@ body {
     top: 458px;
     left: 483px;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
 }
 #toptrumps {
     position: absolute;
@@ -135,7 +143,7 @@ body {
     top: 489px;
     left: 483px;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
 }
 #carddescription {
     position: absolute;

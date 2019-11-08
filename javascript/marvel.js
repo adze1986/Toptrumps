@@ -87,13 +87,13 @@ deck1 = playingdeck.splice(0,15)
 deck2 = playingdeck.splice(0,15)
 let mardraw = function(){
     if(deck2.length == 0 ){
-        {alert("You win the other player has no more cards")};
+        document.getElementById("win").style.display = "block";
     }
     carddrawn1 = []
     carddrawn2 = []
     document.getElementById("deckcount1").innerHTML = deck1.length
     document.getElementById("deckcount2").innerHTML = deck2.length
-    document.getElementById("showncard2").src = "/toptrumps/mainimg/marvelmaxback.jpg"
+    document.getElementById("showncard2").src = "../mainimg/marvelmaxback.jpg"
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic()
@@ -162,186 +162,186 @@ const display = ()=>{
 }
 const coverpic = () => {
     if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/blade.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/blade.jpg"
     }
     if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/bulls.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/bulls.jpg"
     }
     if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/cap.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/cap.jpg"
     }
     if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/car.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/car.jpg"
     }
     if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/cyc.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/cyc.jpg"
     }
     if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/dar.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/dar.jpg"
     }
     if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/dea.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/dea.jpg"
     }
     if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/doc.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/doc.jpg"
     }
     if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/ele.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/ele.jpg"
     }
     if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/gal.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/gal.jpg"
     }
     if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/gho.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/gho.jpg"
     }
     if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/gre.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/gre.jpg"
     }
     if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/hum.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/hum.jpg"
     }
     if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/inv.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/inv.jpg"
     }
     if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/iro.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/iro.jpg"
     }
     if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/kin.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/kin.jpg"
     }
     if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/mag.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/mag.jpg"
     }
     if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/mis.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/mis.jpg"
     }
     if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/mys.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/mys.jpg"
     }
     if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/nam.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/nam.jpg"
     }
     if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/pho.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/pho.jpg"
     }
     if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/pro.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/pro.jpg"
     }
     if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/san.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/san.jpg"
     }
     if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/sil.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/sil.jpg"
     }
     if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/sto.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/sto.jpg"
     }
     if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/the.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/the.jpg"
     }
     if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/theh.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/theh.jpg"
     }
     if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/thi.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/thi.jpg"
     }
     if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/ven.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/ven.jpg"
     }
     if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "/toptrumps/decks/marvel/wol.jpg"
+        document.getElementById("showncard1").src = "../decks/marvel/wol.jpg"
     }
 }
 const secondcoverpic = () => {
     if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/blade.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/blade.jpg"
     }
     if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/bulls.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/bulls.jpg"
     }
     if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/cap.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/cap.jpg"
     }
     if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/car.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/car.jpg"
     }
     if (carddrawn2.pic == 5){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/cyc.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/cyc.jpg"
     }
     if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/dar.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/dar.jpg"
     }
     if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/dea.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/dea.jpg"
     }
     if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/doc.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/doc.jpg"
     }
     if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/ele.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/ele.jpg"
     }
     if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/gal.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/gal.jpg"
     }
     if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/gho.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/gho.jpg"
     }
     if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/gre.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/gre.jpg"
     }
     if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/hum.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/hum.jpg"
     }
     if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/inv.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/inv.jpg"
     }
     if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/iro.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/iro.jpg"
     }
     if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/kin.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/kin.jpg"
     }
     if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/mag.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/mag.jpg"
     }
     if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/mis.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/mis.jpg"
     }
     if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/mys.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/mys.jpg"
     }
     if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/nam.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/nam.jpg"
     }
     if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/pho.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/pho.jpg"
     }
     if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/pro.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/pro.jpg"
     }
     if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/san.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/san.jpg"
     }
     if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/sil.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/sil.jpg"
     }
     if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/sto.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/sto.jpg"
     }
     if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/the.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/the.jpg"
     }
     if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/theh.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/theh.jpg"
     }
     if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/thi.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/thi.jpg"
     }
     if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/ven.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/ven.jpg"
     }
     if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "/toptrumps/decks/marvel/wol.jpg"
+        document.getElementById("showncard2").src = "../decks/marvel/wol.jpg"
     }
 }
 let compare = function(){
@@ -381,7 +381,7 @@ let draw = function(deck){
     }
 }
 home.addEventListener("click", ()=>{
-    window.location.replace("/toptrumps/htmls/index.html");
+    window.location.replace("../htmls/index.html");
 })
 drawbutton.addEventListener("click", ()=>{
     mardraw()

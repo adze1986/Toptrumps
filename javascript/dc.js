@@ -87,13 +87,13 @@ deck1 = playingdeck.splice(0,15)
 deck2 = playingdeck.splice(0,15)
 let dcdraw = function(){
     if(deck2.length == 0 ){
-        {alert("You win the other player has no more cards")};
+        document.getElementById("win").style.display = "block";
     }
     carddrawn1 = [];
     carddrawn2 = [];
     document.getElementById("deckcount1").innerHTML = deck1.length
     document.getElementById("deckcount2").innerHTML = deck2.length
-    document.getElementById("showncard2").src = "/toptrumps/mainimg/dc.jpg"
+    document.getElementById("showncard2").src = "../mainimg/dc.jpg"
     carddrawn1 = deck1.shift();
     carddrawn2 = deck2.shift();
     coverpic();
@@ -162,186 +162,186 @@ const display = ()=>{
 }
 const coverpic = () => {
     if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/ares.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/ares.jpg"
     }
     if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/artemis.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/artemis.jpg"
     }
     if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/bane.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/bane.jpg"
     }
     if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/beastboy.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/beastboy.jpg"
     }
     if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/blackadams.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/blackadams.jpg"
     }
     if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/catwoman.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/catwoman.jpg"
     }
     if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/cheetah.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/cheetah.jpg"
     }
     if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/cyborg.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/cyborg.jpg"
     }
     if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/donnatroy.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/donnatroy.jpg"
     }
     if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/doomsday.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/doomsday.jpg"
     }
     if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/generalzod.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/generalzod.jpg"
     }
     if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/gog.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/gog.jpg"
     }
     if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/hawkgirl.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/hawkgirl.jpg"
     }
     if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/hawkman.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/hawkman.jpg"
     }
     if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/hippolyta.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/hippolyta.jpg"
     }
     if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/lexluthor.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/lexluthor.jpg"
     }
     if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/martian.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/martian.jpg"
     }
     if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/mrfreeze.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/mrfreeze.jpg"
     }
     if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/nightwing.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/nightwing.jpg"
     }
     if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/plasticman.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/plasticman.jpg"
     }
     if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/poisonivy.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/poisonivy.jpg"
     }
     if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/powergirl.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/powergirl.jpg"
     }
     if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/redtornado.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/redtornado.jpg"
     }
     if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/steel.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/steel.jpg"
     }
     if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/superboy.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/superboy.jpg"
     }
     if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/superman.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/superman.jpg"
     }
     if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/theriddler.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/theriddler.jpg"
     }
     if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/twoface.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/twoface.jpg"
     }
     if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/wondergirl.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/wondergirl.jpg"
     }
     if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "/toptrumps/decks/dc/wonderwoman.jpg"
+        document.getElementById("showncard1").src = "../decks/dc/wonderwoman.jpg"
     }
 }
 const secondcoverpic = () => {
     if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/ares.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/ares.jpg"
     }
     if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/artemis.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/artemis.jpg"
     }
     if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/bane.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/bane.jpg"
     }
     if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/beastboy.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/beastboy.jpg"
     }
     if (carddrawn2.pic == 5){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/blackadams.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/blackadams.jpg"
     }
     if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/catwoman.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/catwoman.jpg"
     }
     if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/cheetah.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/cheetah.jpg"
     }
     if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/cyborg.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/cyborg.jpg"
     }
     if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/donnatroy.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/donnatroy.jpg"
     }
     if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/doomsday.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/doomsday.jpg"
     }
     if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/generalzod.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/generalzod.jpg"
     }
     if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/gog.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/gog.jpg"
     }
     if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/hawkgirl.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/hawkgirl.jpg"
     }
     if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/hawkman.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/hawkman.jpg"
     }
     if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/hippolyta.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/hippolyta.jpg"
     }
     if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/lexluthor.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/lexluthor.jpg"
     }
     if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/martian.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/martian.jpg"
     }
     if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/mrfreeze.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/mrfreeze.jpg"
     }
     if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/nightwing.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/nightwing.jpg"
     }
     if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/plasticman.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/plasticman.jpg"
     }
     if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/poisonivy.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/poisonivy.jpg"
     }
     if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/powergirl.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/powergirl.jpg"
     }
     if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/redtornado.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/redtornado.jpg"
     }
     if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/steel.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/steel.jpg"
     }
     if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/superboy.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/superboy.jpg"
     }
     if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/superman.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/superman.jpg"
     }
     if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/theriddler.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/theriddler.jpg"
     }
     if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/twoface.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/twoface.jpg"
     }
     if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/wondergirl.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/wondergirl.jpg"
     }
     if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "/toptrumps/decks/dc/wonderwoman.jpg"
+        document.getElementById("showncard2").src = "../decks/dc/wonderwoman.jpg"
     }
 }
 let compare = function(){
@@ -372,7 +372,7 @@ let draw = function(deck){
     }
 }
 home.addEventListener("click", ()=>{
-    window.location.replace("/toptrumps/htmls/index.html");
+    window.location.replace("../htmls/index.html");
 })
 drawbutton.addEventListener("click", ()=>{
     dcdraw()
