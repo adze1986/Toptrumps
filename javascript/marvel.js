@@ -21,7 +21,7 @@ class Marcard extends Card { //marvel
 let mardeck = [
 new Marcard("Blade", "Cool vampire hunter", 1973,2,3,38,2,4,0,0,"blade"),
 new Marcard("Bullseye", "cool assasin", 1976, 0, 1, 30, 1, 2, 0,0,"bulls"),
-new Marcard("Captain America", "Good old Cap", 1941, 8, 0, 45, 7, 4 , 0,0,"cap"),
+new Marcard("Captain America", "Good old Cap", 1941, 8, 0, 45, 7, 4,0,0,"cap"),
 new Marcard("Carnage", "red Vemon" , 1991, 2, 0, 43, 2, 1, 0,0,"car"),
 new Marcard("Cyclops", "laser eyes", 1963, 5, 3, 43, 5, 4, 0,0,"cyc"),
 new Marcard("Daredevil", "Blind lawyer vigilante", 1964, 1, 1, 36, 3, 4, 0,0,"dar"),
@@ -36,12 +36,12 @@ new Marcard("invisible woman","she can go invisible", 1961,5,2,50,6,4,0,0,"inv")
 new Marcard("Iron Man","rich guy with too much time on his hands",1963,7,0,76,7,3,0,0,"iro"),
 new Marcard("Kingpin","big guy",1967,5,1,36,2,3,0,0,"kin"),
 new Marcard("Magneto","controls metal", 1963,5,3,62,5,4,0,0,"mag"),
-new Marcard("mister fantastic","stretchy guy",1978,3,3,38,2,2,0,0,"mis"),
+new Marcard("mister fantastic","stretchy guy",1961,5,2,45,6,4,0,0,"mis"),
 new Marcard("Mystique","Blue lady, can change look like anyone",1978,3,3,38,2,2,0,0,"mys"),
-new Marcard("Namor","no idea",1963,4,3,80,4,4,0,0,"nam"),
+new Marcard("Namor","no idea",1939,6,0,52,1,3,0,0,"nam"),
 new Marcard("Phoenix","well its Phoenix",1963,4,3,80,4,4,0,0,"pho"),
 new Marcard("Professor X","wheelechair + baldguy",1963,4,3,40,4,4,0,0,"pro"),
-new Marcard("Sandman","made of sand",1966,3,1,76,1,5,0,0,"san"),
+new Marcard("Sandman","made of sand",1963,4,1,45,5,3,0,0,"san"),
 new Marcard("Silver Surfer","silver guy fly on a surf board",1966,3,1,76,1,5,0,0,"sil"),
 new Marcard("Storm","controls weather",1975,4,3,41,4,4,0,0,"sto"),
 new Marcard("Spiderman","its spiderman!!",1962,9,3,45,10,5,0,0,"the"),
@@ -173,38 +173,38 @@ let compare = function(){
         document.getElementById("carddescription").innerHTML = `${carddrawn1.name} ${action1} VS   ${carddrawn2.name}  ${action2}     YOU WIN !!!`
         deck1.push(carddrawn2)
         deck1.push(carddrawn1)
+        drawFunction(deck1)
     }
     else if (action1 == carddrawn1.comic_debut && action1 > action2){
         document.getElementById("carddescription").innerHTML = `${carddrawn1.name} ${action1} VS   ${carddrawn2.name}  ${action2}     YOU LOSE !!!`
         deck2.push(carddrawn1)
         deck2.push(carddrawn2)
+        drawFunction(deck2)
     }
     else if (action1 > action2){
         document.getElementById("carddescription").innerHTML = `${carddrawn1.name} ${action1} VS   ${carddrawn2.name}  ${action2}     YOU WIN !!!`
         deck1.push(carddrawn2)
         deck1.push(carddrawn1)
-        draw(deck1)
-        console.log('win',drawpile)
-
+        drawFunction(deck1)
     }
     else if (action1 == action2){
         drawpile.push(carddrawn1)
         drawpile.push(carddrawn2)
-        console.log('draw',drawpile)
         document.getElementById("carddescription").innerHTML = "its a draw the cards go in the middle - new cards for everyone!!"
     }
     else {
         document.getElementById("carddescription").innerHTML = `${carddrawn1.name} ${action1} VS   ${carddrawn2.name}  ${action2}     YOU LOSE !!!`
         deck2.push(carddrawn1)
         deck2.push(carddrawn2)
-        draw(deck2)
+        drawFunction(deck2)
     }
 }
-let draw = function(deck){
-    for(let i = 0; i <drawpile.length;i++){
-        deck.splice(i)
-        // console.log(drawpile)
+
+let drawFunction = function(deck){
+    for(let i = 0; i < drawpile.length ; i++){
+        deck.push(drawpile[i])
     }
+    drawpile = [];
 }
 home.addEventListener("click", ()=>{
     window.location.replace("../htmls/index.html");
@@ -212,4 +212,6 @@ home.addEventListener("click", ()=>{
 drawbutton.addEventListener("click", ()=>{
     mardraw()
     document.getElementById("draw").style.display = "none"
+    
+    console.log(`i have ${drawpile.length} in the draw pile.`)
 })

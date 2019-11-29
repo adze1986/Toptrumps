@@ -163,13 +163,13 @@ let compare = function(){
         document.getElementById("carddescription").innerHTML = `${carddrawn1.name} ${action1} VS   ${carddrawn2.name}  ${action2}     YOU WIN !!!`
         deck1.push(carddrawn1)
         deck1.push(carddrawn2)
-        draw(deck1)
+        drawFunction(deck1)
     }
     else if (action1 < action2){
         document.getElementById("carddescription").innerHTML = `${carddrawn1.name} ${action1} VS   ${carddrawn2.name}  ${action2}     YOU LOSE !!!`
         deck2.push(carddrawn1)
         deck2.push(carddrawn2)
-        draw(deck2)
+        drawFunction(deck2)
     }
     else if (action1 == action2){
         drawpile.push(carddrawn1)
@@ -177,10 +177,11 @@ let compare = function(){
         document.getElementById("carddescription").innerHTML = "its a draw the cards go in the middle - new cards for everyone!!"
     }
 }
-let draw = function(deck){
-    for(let i = 0; i <drawpile.length;i++){
-        deck.push(i)
+let drawFunction = function(deck){
+    for(let i = 0; i < drawpile.length ; i++){
+        deck.push(drawpile[i])
     }
+    drawpile = [];
 }
 home.addEventListener("click", ()=>{
     window.location.replace("../htmls/index.html");
