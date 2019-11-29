@@ -19,41 +19,40 @@ class Marcard extends Card { //marvel
     }
 }
 let mardeck = [
-new Marcard("Blade", "Cool vampire hunter", 1973,2,3,38,2,4,0,0,1),
-new Marcard("Bullseye", "cool assasin", 1976, 0, 1, 30, 1, 2, 0,0,2),
-new Marcard("Captain America", "Good old Cap", 1941, 8, 0, 45, 7, 4 , 0,0,3),
-new Marcard("Carnage", "red Vemon" , 1991, 2, 0, 43, 2, 1, 0,0,4),
-new Marcard("Cyclops", "laser eyes", 1963, 5, 3, 43, 5, 4, 0,0,5),
-new Marcard("Daredevil", "Blind lawyer vigilante", 1964, 1, 1, 36, 3, 4, 0,0,6),
-new Marcard("Deadpool", "You know deadpool", 1991, 0, 0, 45, 1, 1, 0,0,7),
-new Marcard("Doctor Doom", "science and magic bad guy", 1962, 8, 2, 74, 4, 4, 0,0,8),
-new Marcard("Electra", "femme-fatal/ ninja", 1980, 0, 2, 41, 1, 3, 0,0,9),
-new Marcard("Galactus", "eats planets nuff said",1966,3,1,86,5, 3, 0,0,10),
-new Marcard("Ghost Rider","flaming skull head on a bike..ring any bells?",1972,1,1,48,1,3,0,0,11),
-new Marcard("Green Goblin", "nutcase who hates spierman",1964,3,2,45,1,4,0,0,12),
-new Marcard("Human Torch","Flame On!!",1961,4,2,45,6,4,0,0,13),
-new Marcard("invisible woman","she can go invisible", 1961,5,2,50,6,4,0,0,14),
-new Marcard("Iron Man","rich guy with too much time on his hands",1963,7,0,76,7,3,0,0,15),
-new Marcard("Kingpin","big guy",1967,5,1,36,2,3,0,0,16),
-new Marcard("Magneto","controls metal", 1963,5,3,62,5,4,0,0,17),
-new Marcard("mister fantastic","stretchy guy",1978,3,3,38,2,2,0,0,18),
-new Marcard("Mystique","Blue lady, can change look like anyone",1978,3,3,38,2,2,0,0,19),
-new Marcard("Namor","no idea",1963,4,3,80,4,4,0,0,20),
-new Marcard("Phoenix","well its Phoenix",1963,4,3,80,4,4,0,0,21),
-new Marcard("Professor X","wheelechair + baldguy",1963,4,3,40,4,4,0,0,22),
-new Marcard("Sandman","made of sand",1966,3,1,76,1,5,0,0,23),
-new Marcard("Silver Surfer","silver guy fly on a surf board",1966,3,1,76,1,5,0,0,24),
-new Marcard("Storm","controls weather",1975,4,3,41,4,4,0,0,25),
-new Marcard("Spiderman","its spiderman!!",1962,9,3,45,10,5,0,0,26),
-new Marcard("Hulk","Big Green and angry",1962,5,67,4,5,0,0,27),
-new Marcard("The Thing","It's clobberin' time!",1961,6,2,52,6,4,0,0,28),
-new Marcard("Venom","makes tobey maguire dance like a tool",1988,2,1,36,1,3,0,0,29),
-new Marcard("Wolverin","Metal Claws!!!",1974,3,3,48,4,5,0,0,30),
+new Marcard("Blade", "Cool vampire hunter", 1973,2,3,38,2,4,0,0,"blade"),
+new Marcard("Bullseye", "cool assasin", 1976, 0, 1, 30, 1, 2, 0,0,"bulls"),
+new Marcard("Captain America", "Good old Cap", 1941, 8, 0, 45, 7, 4 , 0,0,"cap"),
+new Marcard("Carnage", "red Vemon" , 1991, 2, 0, 43, 2, 1, 0,0,"car"),
+new Marcard("Cyclops", "laser eyes", 1963, 5, 3, 43, 5, 4, 0,0,"cyc"),
+new Marcard("Daredevil", "Blind lawyer vigilante", 1964, 1, 1, 36, 3, 4, 0,0,"dar"),
+new Marcard("Deadpool", "You know deadpool", 1991, 0, 0, 45, 1, 1, 0,0,"dea"),
+new Marcard("Doctor Doom", "science and magic bad guy", 1962, 8, 2, 74, 4, 4, 0,0,"doc"),
+new Marcard("Electra", "femme-fatal/ ninja", 1980, 0, 2, 41, 1, 3, 0,0,"ele"),
+new Marcard("Galactus", "eats planets nuff said",1966,3,1,86,5, 3, 0,0,"gal"),
+new Marcard("Ghost Rider","flaming skull head on a bike..ring any bells?",1972,1,1,48,1,3,0,0,"gho"),
+new Marcard("Green Goblin", "nutcase who hates spierman",1964,3,2,45,1,4,0,0,"gre"),
+new Marcard("Human Torch","Flame On!!",1961,4,2,45,6,4,0,0,"hum"),
+new Marcard("invisible woman","she can go invisible", 1961,5,2,50,6,4,0,0,"inv"),
+new Marcard("Iron Man","rich guy with too much time on his hands",1963,7,0,76,7,3,0,0,"iro"),
+new Marcard("Kingpin","big guy",1967,5,1,36,2,3,0,0,"kin"),
+new Marcard("Magneto","controls metal", 1963,5,3,62,5,4,0,0,"mag"),
+new Marcard("mister fantastic","stretchy guy",1978,3,3,38,2,2,0,0,"mis"),
+new Marcard("Mystique","Blue lady, can change look like anyone",1978,3,3,38,2,2,0,0,"mys"),
+new Marcard("Namor","no idea",1963,4,3,80,4,4,0,0,"nam"),
+new Marcard("Phoenix","well its Phoenix",1963,4,3,80,4,4,0,0,"pho"),
+new Marcard("Professor X","wheelechair + baldguy",1963,4,3,40,4,4,0,0,"pro"),
+new Marcard("Sandman","made of sand",1966,3,1,76,1,5,0,0,"san"),
+new Marcard("Silver Surfer","silver guy fly on a surf board",1966,3,1,76,1,5,0,0,"sil"),
+new Marcard("Storm","controls weather",1975,4,3,41,4,4,0,0,"sto"),
+new Marcard("Spiderman","its spiderman!!",1962,9,3,45,10,5,0,0,"the"),
+new Marcard("Hulk","Big Green and angry",1962,5,1,67,4,5,0,0,"theh"),
+new Marcard("The Thing","It's clobberin' time!",1961,6,2,52,6,4,0,0,"thi"),
+new Marcard("Venom","makes tobey maguire dance like a tool",1988,2,1,36,1,3,0,0,"ven"),
+new Marcard("Wolverin","Metal Claws!!!",1974,3,3,48,4,5,0,0,"wol"),
 ]
 let playingdeck = [];
 let deck1 = [];
 let deck2 = [];
-let deck;
 let action1;
 let action2;
 let carddrawn1;
@@ -161,189 +160,12 @@ const display = ()=>{
     document.getElementById("Marvel").style.display = "none"
 }
 const coverpic = () => {
-    if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "../decks/marvel/blade.jpg"
-    }
-    if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "../decks/marvel/bulls.jpg"
-    }
-    if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "../decks/marvel/cap.jpg"
-    }
-    if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "../decks/marvel/car.jpg"
-    }
-    if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "../decks/marvel/cyc.jpg"
-    }
-    if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "../decks/marvel/dar.jpg"
-    }
-    if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "../decks/marvel/dea.jpg"
-    }
-    if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "../decks/marvel/doc.jpg"
-    }
-    if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "../decks/marvel/ele.jpg"
-    }
-    if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "../decks/marvel/gal.jpg"
-    }
-    if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "../decks/marvel/gho.jpg"
-    }
-    if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "../decks/marvel/gre.jpg"
-    }
-    if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "../decks/marvel/hum.jpg"
-    }
-    if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "../decks/marvel/inv.jpg"
-    }
-    if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "../decks/marvel/iro.jpg"
-    }
-    if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "../decks/marvel/kin.jpg"
-    }
-    if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "../decks/marvel/mag.jpg"
-    }
-    if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "../decks/marvel/mis.jpg"
-    }
-    if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "../decks/marvel/mys.jpg"
-    }
-    if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "../decks/marvel/nam.jpg"
-    }
-    if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "../decks/marvel/pho.jpg"
-    }
-    if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "../decks/marvel/pro.jpg"
-    }
-    if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "../decks/marvel/san.jpg"
-    }
-    if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "../decks/marvel/sil.jpg"
-    }
-    if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "../decks/marvel/sto.jpg"
-    }
-    if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "../decks/marvel/the.jpg"
-    }
-    if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "../decks/marvel/theh.jpg"
-    }
-    if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "../decks/marvel/thi.jpg"
-    }
-    if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "../decks/marvel/ven.jpg"
-    }
-    if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "../decks/marvel/wol.jpg"
-    }
+        document.getElementById("showncard1").src = `../decks/marvel/${carddrawn1.pic}.jpg`
 }
+
 const secondcoverpic = () => {
-    if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "../decks/marvel/blade.jpg"
+        document.getElementById("showncard2").src = `../decks/marvel/${carddrawn2.pic}.jpg`
     }
-    if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "../decks/marvel/bulls.jpg"
-    }
-    if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "../decks/marvel/cap.jpg"
-    }
-    if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "../decks/marvel/car.jpg"
-    }
-    if (carddrawn2.pic == 5){
-        document.getElementById("showncard2").src = "../decks/marvel/cyc.jpg"
-    }
-    if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "../decks/marvel/dar.jpg"
-    }
-    if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "../decks/marvel/dea.jpg"
-    }
-    if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "../decks/marvel/doc.jpg"
-    }
-    if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "../decks/marvel/ele.jpg"
-    }
-    if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "../decks/marvel/gal.jpg"
-    }
-    if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "../decks/marvel/gho.jpg"
-    }
-    if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "../decks/marvel/gre.jpg"
-    }
-    if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "../decks/marvel/hum.jpg"
-    }
-    if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "../decks/marvel/inv.jpg"
-    }
-    if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "../decks/marvel/iro.jpg"
-    }
-    if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "../decks/marvel/kin.jpg"
-    }
-    if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "../decks/marvel/mag.jpg"
-    }
-    if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "../decks/marvel/mis.jpg"
-    }
-    if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "../decks/marvel/mys.jpg"
-    }
-    if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "../decks/marvel/nam.jpg"
-    }
-    if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "../decks/marvel/pho.jpg"
-    }
-    if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "../decks/marvel/pro.jpg"
-    }
-    if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "../decks/marvel/san.jpg"
-    }
-    if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "../decks/marvel/sil.jpg"
-    }
-    if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "../decks/marvel/sto.jpg"
-    }
-    if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "../decks/marvel/the.jpg"
-    }
-    if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "../decks/marvel/theh.jpg"
-    }
-    if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "../decks/marvel/thi.jpg"
-    }
-    if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "../decks/marvel/ven.jpg"
-    }
-    if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "../decks/marvel/wol.jpg"
-    }
-}
 let compare = function(){
     secondcoverpic()
     document.getElementById("description").innerHTML = `${carddrawn1.name} VS ${carddrawn2.name}`
@@ -362,10 +184,13 @@ let compare = function(){
         deck1.push(carddrawn2)
         deck1.push(carddrawn1)
         draw(deck1)
+        console.log('win',drawpile)
+
     }
     else if (action1 == action2){
         drawpile.push(carddrawn1)
         drawpile.push(carddrawn2)
+        console.log('draw',drawpile)
         document.getElementById("carddescription").innerHTML = "its a draw the cards go in the middle - new cards for everyone!!"
     }
     else {
@@ -377,7 +202,8 @@ let compare = function(){
 }
 let draw = function(deck){
     for(let i = 0; i <drawpile.length;i++){
-        deck.push(i)
+        deck.splice(i)
+        // console.log(drawpile)
     }
 }
 home.addEventListener("click", ()=>{

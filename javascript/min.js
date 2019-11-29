@@ -18,41 +18,40 @@ class Mincard extends Card { //minions
     }
 }
 let mindeck = [
-new Mincard("Aye, Matie","",16,7,42,60,31,0,0,1),
-new Mincard("Banan Banana","",10,5,31,75,88,0,0,2),
-new Mincard("Battty over Dracula","",15,6,45,70,48,0,0,3),
-new Mincard("Bob","",27,8,48,50,97,0,0,4),
-new Mincard("Bored Silly","",10,3,8,25,27,0,0,5),
-new Mincard("Denim Dungarees","",30,2,33,64,21,0,0,6),
-new Mincard("Feeling Blue","",5,6,10,20,32,0,0,7),
-new Mincard("Getting Closer","",22,6,40,51,72,0,0,8),
-new Mincard("In the big city","",26,4,46,80,39,0,0,9),
-new Mincard("Kevin","",28,10,50,42,99,0,0,10),
-new Mincard("Long journey ahead","",18,8,47,28,68,0,0,11),
-new Mincard("Looking for Scarlet","",13,6,25,74,63,0,0,12),
-new Mincard("Meet scarlet Overkill","",27,6,25,30,90,0,0,13),
-new Mincard("Meeting Professor Flux","",20,4,27,42,38,0,0,14),
-new Mincard("Peace, brother minion","",17,5,47,69,34,0,0,15),
-new Mincard("Rule of tghe T-Rex","",10,10,60,72,62,0,0,16),
-new Mincard("Scarlet's castle","",30,7,29,28,87,0,0,17),
-new Mincard("Serving the Pharaoh","",17,8,50,62,55,0,0,18),
-new Mincard("Stranded in snow","",11,6,25,31,40,0,0,19),
-new Mincard("Stuart","",25,9,49,55,98,0,0,20),
-new Mincard("Stuart & co","",9,3,30,79,33,0,0,21),
-new Mincard("Swimming to the city!","",12,9,49,73,91,0,0,22),
-new Mincard("The journey begins","",15,4,40,75,45,0,0,23),
-new Mincard("The quest begins","",29,10,50,72,100,0,0,24),
-new Mincard("To Orlando","",9,6,45,62,42,0,0,25),
-new Mincard("To Villian Con!","",11,7,28,53,56,0,0,26),
-new Mincard("Uhh caveman?","",12,5,55,56,32,0,0,27),
-new Mincard("Vive le Minion","",19,9,40,63,81,0,0,28),
-new Mincard("What will happen next?","",25,8,24,70,96,0,0,29),
-new Mincard("With the most evil","",28,5,32,40,47,0,0,30),
+new Mincard("Aye, Matie","",16,7,42,60,31,0,0,"aye"),
+new Mincard("Banan Banana","",10,5,31,75,88,0,0,"ban"),
+new Mincard("Battty over Dracula","",15,6,45,70,48,0,0,"bat"),
+new Mincard("Bob","",27,8,48,50,97,0,0,"bob"),
+new Mincard("Bored Silly","",10,3,8,25,27,0,0,"bor"),
+new Mincard("Denim Dungarees","",30,2,33,64,21,0,0,"den"),
+new Mincard("Feeling Blue","",5,6,10,20,32,0,0,"fee"),
+new Mincard("Getting Closer","",22,6,40,51,72,0,0,"get"),
+new Mincard("In the big city","",26,4,46,80,39,0,0,"int"),
+new Mincard("Kevin","",28,10,50,42,99,0,0,"kev"),
+new Mincard("Long journey ahead","",18,8,47,28,68,0,0,"lon"),
+new Mincard("Looking for Scarlet","",13,6,25,74,63,0,0,"loo"),
+new Mincard("Meet scarlet Overkill","",27,6,25,30,90,0,0,"mee"),
+new Mincard("Meeting Professor Flux","",20,4,27,42,38,0,0,"meet"),
+new Mincard("Peace, brother minion","",17,5,47,69,34,0,0,"pea"),
+new Mincard("Rule of tghe T-Rex","",10,10,60,72,62,0,0,"rul"),
+new Mincard("Scarlet's castle","",30,7,29,28,87,0,0,"sca"),
+new Mincard("Serving the Pharaoh","",17,8,50,62,55,0,0,"ser"),
+new Mincard("Stranded in snow","",11,6,25,31,40,0,0,"str"),
+new Mincard("Stuart","",25,9,49,55,98,0,0,"stu"),
+new Mincard("Stuart & co","",9,3,30,79,33,0,0,"stua"),
+new Mincard("Swimming to the city!","",12,9,49,73,91,0,0,"swi"),
+new Mincard("The journey begins","",15,4,40,75,45,0,0,"thej"),
+new Mincard("The quest begins","",29,10,50,72,100,0,0,"theq"),
+new Mincard("To Orlando","",9,6,45,62,42,0,0,"to"),
+new Mincard("To Villian Con!","",11,7,28,53,56,0,0,"tov"),
+new Mincard("Uhh caveman?","",12,5,55,56,32,0,0,"uhh"),
+new Mincard("Vive le Minion","",19,9,40,63,81,0,0,"viv"),
+new Mincard("What will happen next?","",25,8,24,70,96,0,0,"wha"),
+new Mincard("With the most evil","",28,5,32,40,47,0,0,"wit"),
 ]
 let playingdeck = [];
 let deck1 = [];
 let deck2 = [];
-let deck;
 let action1;
 let action2;
 let carddrawn1;
@@ -150,189 +149,12 @@ const display = ()=>{
     document.getElementById("toptrumps").style.display = "none"
 }
 const coverpic = () => {
-    if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "../decks/min/aye.jpg"
-    }
-    if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "../decks/min/ban.jpg"
-    }
-    if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "../decks/min/bat.jpg"
-    }
-    if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "../decks/min/bob.jpg"
-    }
-    if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "../decks/min/bor.jpg"
-    }
-    if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "../decks/min/den.jpg"
-    }
-    if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "../decks/min/fee.jpg"
-    }
-    if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "../decks/min/get.jpg"
-    }
-    if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "../decks/min/int.jpg"
-    }
-    if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "../decks/min/kev.jpg"
-    }
-    if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "../decks/min/lon.jpg"
-    }
-    if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "../decks/min/loo.jpg"
-    }
-    if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "../decks/min/mee.jpg"
-    }
-    if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "../decks/min/meet.jpg"
-    }
-    if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "../decks/min/pea.jpg"
-    }
-    if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "../decks/min/rul.jpg"
-    }
-    if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "../decks/min/sca.jpg"
-    }
-    if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "../decks/min/ser.jpg"
-    }
-    if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "../decks/min/str.jpg"
-    }
-    if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "../decks/min/stu.jpg"
-    }
-    if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "../decks/min/stua.jpg"
-    }
-    if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "../decks/min/swi.jpg"
-    }
-    if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "../decks/min/thej.jpg"
-    }
-    if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "../decks/min/theq.jpg"
-    }
-    if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "../decks/min/to.jpg"
-    }
-    if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "../decks/min/tov.jpg"
-    }
-    if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "../decks/min/uhh.jpg"
-    }
-    if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "../decks/min/viv.jpg"
-    }
-    if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "../decks/min/wha.jpg"
-    }
-    if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "../decks/min/wit.jpg"
-    }
+        document.getElementById("showncard1").src = `../decks/min/${carddrawn1.pic}.jpg`
 }
 const secondcoverpic = () => {
-    if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "../decks/min/aye.jpg"
-    }
-    if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "../decks/min/ban.jpg"
-    }
-    if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "../decks/min/bat.jpg"
-    }
-    if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "../decks/min/bob.jpg"
-    }
-    if (carddrawn2.pic == 5){
-        document.getElementById("showncard2").src = "../decks/min/bor.jpg"
-    }
-    if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "../decks/min/den.jpg"
-    }
-    if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "../decks/min/fee.jpg"
-    }
-    if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "../decks/min/get.jpg"
-    }
-    if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "../decks/min/int.jpg"
-    }
-    if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "../decks/min/kev.jpg"
-    }
-    if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "../decks/min/lon.jpg"
-    }
-    if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "../decks/min/loo.jpg"
-    }
-    if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "../decks/min/mee.jpg"
-    }
-    if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "../decks/min/meet.jpg"
-    }
-    if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "../decks/min/pea.jpg"
-    }
-    if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "../decks/min/rul.jpg"
-    }
-    if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "../decks/min/sca.jpg"
-    }
-    if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "../decks/min/ser.jpg"
-    }
-    if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "../decks/min/str.jpg"
-    }
-    if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "../decks/min/stu.jpg"
-    }
-    if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "../decks/min/stua.jpg"
-    }
-    if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "../decks/min/swi.jpg"
-    }
-    if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "../decks/min/thej.jpg"
-    }
-    if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "../decks/min/theq.jpg"
-    }
-    if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "../decks/min/to.jpg"
-    }
-    if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "../decks/min/tov.jpg"
-    }
-    if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "../decks/min/uhh.jpg"
-    }
-    if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "../decks/min/viv.jpg"
-    }
-    if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "../decks/min/wha.jpg"
-    }
-    if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "../decks/min/wit.jpg"
-    }
+        document.getElementById("showncard2").src = `../decks/min/${carddrawn2.pic}.jpg`
 }
+    
 let compare = function(){
     secondcoverpic()
     document.getElementById("description").innerHTML = `${carddrawn1.name} VS ${carddrawn2.name}`

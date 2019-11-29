@@ -18,41 +18,40 @@ class Familycard extends Card { //family guy
     }
 }
 let familydeck = [
-new Familycard("Bertram","",15,4,7,29,18,0,0,1),
-new Familycard("Bonnie Swanson","",41,12,16,8,66,0,0,2),
-new Familycard("Brian Griffin","",31,13,20,18,67,0,0,3),
-new Familycard("Bruce","",19,13,14,25,43,0,0,4),
-new Familycard("Carter pewterschmidt","",43,8,6,19,54,0,0,5),
-new Familycard("Chris Griffin","",17,10,9,27,63,0,0,6),
-new Familycard("Cleveland Brown","",25,12,11,19,64,0,0,7),
-new Familycard("Death","",16,6,10,21,45,0,0,8),
-new Familycard("Diane Simmons","",42,15,9,24,58,0,0,9),
-new Familycard("Dr Hartman","",20,15,6,7,61,0,0,10),
-new Familycard("Evil Monkey","",14,1,7,30,18,0,0,11),
-new Familycard("Glenn Quagmire","",45,14,9,28,36,0,0,12),
-new Familycard("Greased up deaf guy","",1,13,0,26,2,0,0,13),
-new Familycard("Herbert","",18,11,13,29,14,0,0,14),
-new Familycard("Jake Tucker","",16,10,6,25,43,0,0,15),
-new Familycard("Jasper","",39,8,8,18,59,0,0,16),
-new Familycard("Jillian Russell","",41,9,11,27,35,0,0,17),
-new Familycard("Joe Swanson","",31,15,14,14,66,0,0,18),
-new Familycard("Lois Griffin","",37,12,17,16,70,0,0,19),
-new Familycard("Meg griffin","",21,4,12,21,61,0,0,20),
-new Familycard("Mickey McFinnegan","",24,4,3,27,25,0,0,21),
-new Familycard("Mort Goldman","",13,14,6,30,58,0,0,22),
-new Familycard("Neil Goldman","",8,6,4,21,53,0,0,23),
-new Familycard("Peter Griffin","",26,14,5,29,63,0,0,24),
-new Familycard("Rupert","",9,2,4,21,70,0,0,25),
-new Familycard("Seamus","",34,11,8,28,22,0,0,26),
-new Familycard("Stewie Griffin","",23,9,18,30,20,0,0,27),
-new Familycard("The Giant Chicken","",10,6,5,30,11,0,0,28),
-new Familycard("Tom Tucker","",39,15,10,23,49,0,0,29),
-new Familycard("Tricia Takanawa","",33,14,10,12,55,0,0,30),
+new Familycard("Bertram","",15,4,7,29,18,0,0,"ber"),
+new Familycard("Bonnie Swanson","",41,12,16,8,66,0,0,"bon"),
+new Familycard("Brian Griffin","",31,13,20,18,67,0,0,"bri"),
+new Familycard("Bruce","",19,13,14,25,43,0,0,"bru"),
+new Familycard("Carter pewterschmidt","",43,8,6,19,54,0,0,"car"),
+new Familycard("Chris Griffin","",17,10,9,27,63,0,0,"chr"),
+new Familycard("Cleveland Brown","",25,12,11,19,64,0,0,"cle"),
+new Familycard("Death","",16,6,10,21,45,0,0,"dea"),
+new Familycard("Diane Simmons","",42,15,9,24,58,0,0,"dia"),
+new Familycard("Dr Hartman","",20,15,6,7,61,0,0,"dr"),
+new Familycard("Evil Monkey","",14,1,7,30,18,0,0,"evil"),
+new Familycard("Glenn Quagmire","",45,14,9,28,36,0,0,"gle"),
+new Familycard("Greased up deaf guy","",1,13,0,26,2,0,0,"gre"),
+new Familycard("Herbert","",18,11,13,29,14,0,0,"her"),
+new Familycard("Jake Tucker","",16,10,6,25,43,0,0,"jak"),
+new Familycard("Jasper","",39,8,8,18,59,0,0,"jas"),
+new Familycard("Jillian Russell","",41,9,11,27,35,0,0,"jil"),
+new Familycard("Joe Swanson","",31,15,14,14,66,0,0,"joe"),
+new Familycard("Lois Griffin","",37,12,17,16,70,0,0,"loi"),
+new Familycard("Meg griffin","",21,4,12,21,61,0,0,"meg"),
+new Familycard("Mickey McFinnegan","",24,4,3,27,25,0,0,"mic"),
+new Familycard("Mort Goldman","",13,14,6,30,58,0,0,"mor"),
+new Familycard("Neil Goldman","",8,6,4,21,53,0,0,"nei"),
+new Familycard("Peter Griffin","",26,14,5,29,63,0,0,"pet"),
+new Familycard("Rupert","",9,2,4,21,70,0,0,"rup"),
+new Familycard("Seamus","",34,11,8,28,22,0,0,"sea"),
+new Familycard("Stewie Griffin","",23,9,18,30,20,0,0,"ste"),
+new Familycard("The Giant Chicken","",10,6,5,30,11,0,0,"the"),
+new Familycard("Tom Tucker","",39,15,10,23,49,0,0,"tom"),
+new Familycard("Tricia Takanawa","",33,14,10,12,55,0,0,"tri"),
 ]
 let playingdeck = [];
 let deck1 = [];
 let deck2 = [];
-let deck;
 let action1;
 let action2;
 let carddrawn1;
@@ -150,189 +149,13 @@ const display = ()=>{
     document.getElementById("family").style.display = "none"
 }
 const coverpic = () => {
-    if (carddrawn1.pic == 1){
-        document.getElementById("showncard1").src = "../decks/family/ber.jpg"
-    }
-    if (carddrawn1.pic == 2){
-        document.getElementById("showncard1").src = "../decks/family/bon.jpg"
-    }
-    if (carddrawn1.pic == 3){
-        document.getElementById("showncard1").src = "../decks/family/bri.jpg"
-    }
-    if (carddrawn1.pic == 4){
-        document.getElementById("showncard1").src = "../decks/family/bru.jpg"
-    }
-    if (carddrawn1.pic == 5){
-        document.getElementById("showncard1").src = "../decks/family/car.jpg"
-    }
-    if (carddrawn1.pic == 6){
-        document.getElementById("showncard1").src = "../decks/family/chr.jpg"
-    }
-    if (carddrawn1.pic == 7){
-        document.getElementById("showncard1").src = "../decks/family/cle.jpg"
-    }
-    if (carddrawn1.pic == 8){
-        document.getElementById("showncard1").src = "../decks/family/dea.jpg"
-    }
-    if (carddrawn1.pic == 9){
-        document.getElementById("showncard1").src = "../decks/family/dia.jpg"
-    }
-    if (carddrawn1.pic == 10){
-        document.getElementById("showncard1").src = "../decks/family/dr.jpg"
-    }
-    if (carddrawn1.pic == 11){
-        document.getElementById("showncard1").src = "../decks/family/evil.jpg"
-    }
-    if (carddrawn1.pic == 12){
-        document.getElementById("showncard1").src = "../decks/family/gle.jpg"
-    }
-    if (carddrawn1.pic == 13){
-        document.getElementById("showncard1").src = "../decks/family/gre.jpg"
-    }
-    if (carddrawn1.pic == 14){
-        document.getElementById("showncard1").src = "../decks/family/her.jpg"
-    }
-    if (carddrawn1.pic == 15){
-        document.getElementById("showncard1").src = "../decks/family/jak.jpg"
-    }
-    if (carddrawn1.pic == 16){
-        document.getElementById("showncard1").src = "../decks/family/jas.jpg"
-    }
-    if (carddrawn1.pic == 17){
-        document.getElementById("showncard1").src = "../decks/family/jil.jpg"
-    }
-    if (carddrawn1.pic == 18){
-        document.getElementById("showncard1").src = "../decks/family/joe.jpg"
-    }
-    if (carddrawn1.pic == 19){
-        document.getElementById("showncard1").src = "../decks/family/loi.jpg"
-    }
-    if (carddrawn1.pic == 20){
-        document.getElementById("showncard1").src = "../decks/family/meg.jpg"
-    }
-    if (carddrawn1.pic == 21){
-        document.getElementById("showncard1").src = "../decks/family/mic.jpg"
-    }
-    if (carddrawn1.pic == 22){
-        document.getElementById("showncard1").src = "../decks/family/mor.jpg"
-    }
-    if (carddrawn1.pic == 23){
-        document.getElementById("showncard1").src = "../decks/family/neil.jpg"
-    }
-    if (carddrawn1.pic == 24){
-        document.getElementById("showncard1").src = "../decks/family/pet.jpg"
-    }
-    if (carddrawn1.pic == 25){
-        document.getElementById("showncard1").src = "../decks/family/rup.jpg"
-    }
-    if (carddrawn1.pic == 26){
-        document.getElementById("showncard1").src = "../decks/family/sea.jpg"
-    }
-    if (carddrawn1.pic == 27){
-        document.getElementById("showncard1").src = "../decks/family/ste.jpg"
-    }
-    if (carddrawn1.pic == 28){
-        document.getElementById("showncard1").src = "../decks/family/the.jpg"
-    }
-    if (carddrawn1.pic == 29){
-        document.getElementById("showncard1").src = "../decks/family/tom.jpg"
-    }
-    if (carddrawn1.pic == 30){
-        document.getElementById("showncard1").src = "../decks/family/tri.jpg"
-    }
+        document.getElementById("showncard1").src = `../decks/family/${carddrawn1.pic}.jpg`
 }
+
 const secondcoverpic = () => {
-    if (carddrawn2.pic == 1){
-        document.getElementById("showncard2").src = "../decks/family/ber.jpg"
-    }
-    if (carddrawn2.pic == 2){
-        document.getElementById("showncard2").src = "../decks/family/bon.jpg"
-    }
-    if (carddrawn2.pic == 3){
-        document.getElementById("showncard2").src = "../decks/family/bri.jpg"
-    }
-    if (carddrawn2.pic == 4){
-        document.getElementById("showncard2").src = "../decks/family/bru.jpg"
-    }
-    if (carddrawn1.pic == 5){
-        document.getElementById("showncard2").src = "../decks/family/car.jpg"
-    }
-    if (carddrawn2.pic == 6){
-        document.getElementById("showncard2").src = "../decks/family/chr.jpg"
-    }
-    if (carddrawn2.pic == 7){
-        document.getElementById("showncard2").src = "../decks/family/cle.jpg"
-    }
-    if (carddrawn2.pic == 8){
-        document.getElementById("showncard2").src = "../decks/family/dea.jpg"
-    }
-    if (carddrawn2.pic == 9){
-        document.getElementById("showncard2").src = "../decks/family/dia.jpg"
-    }
-    if (carddrawn2.pic == 10){
-        document.getElementById("showncard2").src = "../decks/family/dr.jpg"
-    }
-    if (carddrawn2.pic == 11){
-        document.getElementById("showncard2").src = "../decks/family/evil.jpg"
-    }
-    if (carddrawn2.pic == 12){
-        document.getElementById("showncard2").src = "../decks/family/gle.jpg"
-    }
-    if (carddrawn2.pic == 13){
-        document.getElementById("showncard2").src = "../decks/family/gre.jpg"
-    }
-    if (carddrawn2.pic == 14){
-        document.getElementById("showncard2").src = "../decks/family/her.jpg"
-    }
-    if (carddrawn2.pic == 15){
-        document.getElementById("showncard2").src = "../decks/family/jak.jpg"
-    }
-    if (carddrawn2.pic == 16){
-        document.getElementById("showncard2").src = "../decks/family/jas.jpg"
-    }
-    if (carddrawn2.pic == 17){
-        document.getElementById("showncard2").src = "../decks/family/jil.jpg"
-    }
-    if (carddrawn2.pic == 18){
-        document.getElementById("showncard2").src = "../decks/family/joe.jpg"
-    }
-    if (carddrawn2.pic == 19){
-        document.getElementById("showncard2").src = "../decks/family/loi.jpg"
-    }
-    if (carddrawn2.pic == 20){
-        document.getElementById("showncard2").src = "../decks/family/meg.jpg"
-    }
-    if (carddrawn2.pic == 21){
-        document.getElementById("showncard2").src = "../decks/family/mic.jpg"
-    }
-    if (carddrawn2.pic == 22){
-        document.getElementById("showncard2").src = "../decks/family/mor.jpg"
-    }
-    if (carddrawn2.pic == 23){
-        document.getElementById("showncard2").src = "../decks/family/neil.jpg"
-    }
-    if (carddrawn2.pic == 24){
-        document.getElementById("showncard2").src = "../decks/family/pet.jpg"
-    }
-    if (carddrawn2.pic == 25){
-        document.getElementById("showncard2").src = "../decks/family/rup.jpg"
-    }
-    if (carddrawn2.pic == 26){
-        document.getElementById("showncard2").src = "../decks/family/sea.jpg"
-    }
-    if (carddrawn2.pic == 27){
-        document.getElementById("showncard2").src = "../decks/family/ste.jpg"
-    }
-    if (carddrawn2.pic == 28){
-        document.getElementById("showncard2").src = "../decks/family/the.jpg"
-    }
-    if (carddrawn2.pic == 29){
-        document.getElementById("showncard2").src = "../decks/family/tom.jpg"
-    }
-    if (carddrawn2.pic == 30){
-        document.getElementById("showncard2").src = "../decks/family/tri.jpg"
-    }
+        document.getElementById("showncard2").src = `../decks/family/${carddrawn2.pic}.jpg`
 }
+
 let compare = function(){
     secondcoverpic()
     document.getElementById("description").innerHTML = `${carddrawn1.name} VS ${carddrawn2.name}`
